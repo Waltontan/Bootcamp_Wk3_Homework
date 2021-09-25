@@ -86,7 +86,7 @@ with open(filepath, "r") as file:
 output_path = os.path.join("Analysis","Financial_Analysis.txt")
 
 # Open the file using "write" mode. Specify the variable to hold the contents
-with open(output_path, 'w', newline='') as file:
+with open(output_path, 'w') as file:  #newline=''
 
     #write into text file
     file.write("----------------------------")
