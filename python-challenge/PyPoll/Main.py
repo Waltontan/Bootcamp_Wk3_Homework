@@ -1,8 +1,9 @@
 import csv
+import os
 from os import error, name
 
 # Set csv file path
-filepath = "Resources/election_data.csv"
+filepath = os.path.join("Resources","election_data.csv")
 
 # Open CSV file and set delimiter
 with open(filepath, "r") as file:
@@ -73,7 +74,7 @@ with open(filepath, "r") as file:
 
 
 # Specifying output location and name of new text file
-output_path = "Resources/election_results.txt"
+output_path = os.path.join("Analysis","election_results.txt")
 
 # Open the file using "write" mode. Specify the variable to hold the contents
 with open(output_path, 'w', newline='') as file:

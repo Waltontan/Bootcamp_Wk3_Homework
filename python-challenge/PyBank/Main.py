@@ -1,6 +1,7 @@
 import csv
+import os
 
-filepath = "Resources/budget_data.csv"
+filepath = os.path.join("Resources","budget_data.csv")
 
 
 # Open csv file
@@ -82,7 +83,7 @@ with open(filepath, "r") as file:
 
 
 # Specifying output location and name of new text file
-output_path = "Resources/Financial_Analysis.txt"
+output_path = os.path.join("Analysis","Financial_Analysis.txt")
 
 # Open the file using "write" mode. Specify the variable to hold the contents
 with open(output_path, 'w', newline='') as file:
